@@ -47,8 +47,8 @@ export default function pokemonDetails({ pokemon }) {
       <h1 className={ styles.pokemonName }>{ pokemon.name }</h1>
       <Image
         src={ `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${ pokemonId }.png` }
-        width='120'
-        height='120'
+        width='200'
+        height='200'
         alt={ pokemon.name }
       />
       <div>
