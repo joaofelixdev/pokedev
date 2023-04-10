@@ -20,9 +20,8 @@ export const getStaticProps = async (context) => {
 export const getStaticPaths = async () => {
   
   const maxPokemons = 251
-  const api = 'https://pokeapi.co/api/v2/pokemon/'
 
-  const response = await fetch(`${ api }/?limit=${ maxPokemons }`)
+  const response = await fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${ maxPokemons }`)
   const data = await response.json()
 
   const paths = data.results.map((pokemon, index) => {
